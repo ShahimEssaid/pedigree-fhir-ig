@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "LifeStatus",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">alive<a name=\"LifeStatus-alive\"> </a></td><td>Alive</td></tr><tr><td style=\"white-space:nowrap\">deceased<a name=\"LifeStatus-deceased\"> </a></td><td>Deceased</td></tr><tr><td style=\"white-space:nowrap\">unborn<a name=\"LifeStatus-unborn\"> </a></td><td>Unborn</td></tr></table></div>"
+  },
+  "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus",
+  "version": "0.1.0",
+  "name": "LifeStatus",
+  "title": "Life Status",
+  "status": "active",
+  "date": "2021-02-10T16:41:10+10:00",
+  "publisher": "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream",
+  "contact": [
+    {
+      "name": "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/"
+        }
+      ]
+    }
+  ],
+  "description": "The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn.",
+  "copyright": "[Global Alliance for Genomics and Health](https://www.ga4gh.org)",
+  "content": "complete",
+  "count": 3,
+  "concept": [
+    {
+      "code": "alive",
+      "display": "Alive"
+    },
+    {
+      "code": "deceased",
+      "display": "Deceased"
+    },
+    {
+      "code": "unborn",
+      "display": "Unborn"
+    }
+  ]
+}
