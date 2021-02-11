@@ -1,16 +1,20 @@
 ﻿GA4GHPedigreeIG : Validation Results
 =========================================
 
-err = 0, warn = 0, info = 0
+err = 0, warn = 0, info = 3
 IG Publisher Version: 1.1.59
-Generated Wed Feb 10 16:42:09 AEST 2021. FHIR version 4.0.1 for ga4gh.fhir.pedigree#0.1.0 (canonical = http://ga4gh-cp.github.io/pedigree-fhir-ig)
+Generated Thu Feb 11 16:35:29 AEST 2021. FHIR version 4.0.1 for ga4gh.fhir.pedigree#0.1.0 (canonical = http://ga4gh-cp.github.io/pedigree-fhir-ig)
 
  Build Errors : 0 / 0 / 0
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/ImplementationGuide-ga4gh.fhir.pedigree : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/codesystem-LifeStatus : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/codesystem-SectionType : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/composition-SimpsonsPedigree : 0 / 0 / 1
+ /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/composition-TrioPedigree : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/condition-BartsCondition : 0 / 0 / 1
+ /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/condition-FatherFirstCondition : 0 / 0 / 2
+ /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/condition-FatherSecondCondition : 0 / 0 / 2
+ /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/condition-ProbandCondition : 0 / 0 / 2
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/familymemberhistory-BartHomerRelationship : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/familymemberhistory-BartMargeRelationship : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/familymemberhistory-HomerAbeRelationship : 0 / 0 / 1
@@ -20,6 +24,7 @@ Generated Wed Feb 10 16:42:09 AEST 2021. FHIR version 4.0.1 for ga4gh.fhir.pedig
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/observation-AffectedStatusFather : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/observation-AffectedStatusMother : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/observation-AffectedStatusProband : 0 / 0 / 1
+ /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/organization-MelbourneGenomics : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/patient-Abe : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/patient-Bart : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/patient-Father : 0 / 0 / 1
@@ -46,8 +51,19 @@ INFORMATION: CodeSystem/LifeStatus: CodeSystem: Validate resource against profil
 INFORMATION: CodeSystem/SectionType: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Composition-SimpsonsPedigree.json ==
 INFORMATION: Composition/SimpsonsPedigree: Composition: Validate resource against profile http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/Pedigree
+== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Composition-TrioPedigree.json ==
+INFORMATION: Composition/TrioPedigree: Composition: Validate resource against profile http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/Pedigree
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Condition-BartsCondition.json ==
 INFORMATION: Condition/BartsCondition: Condition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
+== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Condition-FatherFirstCondition.json ==
+INFORMATION: Condition/FatherFirstCondition: Condition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
+INFORMATION: Condition/FatherFirstCondition: Condition.code.coding[0]: Code System URI 'http://purl.obolibrary.org/obo/hp.owl' is unknown so the code cannot be validated
+== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Condition-FatherSecondCondition.json ==
+INFORMATION: Condition/FatherSecondCondition: Condition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
+INFORMATION: Condition/FatherSecondCondition: Condition.code.coding[0]: Code System URI 'http://purl.obolibrary.org/obo/hp.owl' is unknown so the code cannot be validated
+== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Condition-ProbandCondition.json ==
+INFORMATION: Condition/ProbandCondition: Condition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Condition
+INFORMATION: Condition/ProbandCondition: Condition.code.coding[0]: Code System URI 'http://purl.obolibrary.org/obo/hp.owl' is unknown so the code cannot be validated
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/FamilyMemberHistory-BartHomerRelationship.json ==
 INFORMATION: FamilyMemberHistory/BartHomerRelationship: FamilyMemberHistory: Validate resource against profile http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeRelationship
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/FamilyMemberHistory-BartMargeRelationship.json ==
@@ -66,6 +82,8 @@ INFORMATION: Observation/AffectedStatusFather: Observation: Validate resource ag
 INFORMATION: Observation/AffectedStatusMother: Observation: Validate resource against profile http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/AffectedStatus
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Observation-AffectedStatusProband.json ==
 INFORMATION: Observation/AffectedStatusProband: Observation: Validate resource against profile http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/AffectedStatus
+== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Organization-MelbourneGenomics.json ==
+INFORMATION: Organization/MelbourneGenomics: Organization: Validate resource against profile http://hl7.org/fhir/StructureDefinition/Organization
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Patient-Abe.json ==
 INFORMATION: Patient/Abe: Patient: Validate resource against profile http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Patient-Bart.json ==

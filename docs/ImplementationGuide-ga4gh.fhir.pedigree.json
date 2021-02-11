@@ -10,7 +10,7 @@
   "name": "GA4GHPedigreeIG",
   "title": "GA4GH Pedigree FHIR Implementation Guide",
   "status": "draft",
-  "date": "2021-02-10T16:41:10+10:00",
+  "date": "2021-02-11T16:33:59+10:00",
   "publisher": "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream",
   "contact": [
     {
@@ -552,8 +552,36 @@
           "reference": "Patient/Father"
         },
         "name": "Father",
-        "description": "The father in a trio.",
+        "description": "The father in the trio.",
         "exampleCanonical": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/FatherFirstCondition"
+        },
+        "name": "Father First Condition",
+        "description": "Cardiomegaly, the first condition suffered by the father.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/FatherSecondCondition"
+        },
+        "name": "Father Second Condition",
+        "description": "Shuffling gait, the second condition suffered by the father.",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -615,6 +643,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Organization"
+          }
+        ],
+        "reference": {
+          "reference": "Organization/MelbourneGenomics"
+        },
+        "name": "Melbourne Genomics",
+        "description": "The Melbourne Genomics organisation.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -622,7 +664,7 @@
           "reference": "Patient/Mother"
         },
         "name": "Mother",
-        "description": "The mother in a trio.",
+        "description": "The mother in the trio.",
         "exampleCanonical": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual"
       },
       {
@@ -636,8 +678,22 @@
           "reference": "Patient/Proband"
         },
         "name": "Proband",
-        "description": "The proband in a trio.",
+        "description": "The proband in the trio.",
         "exampleCanonical": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/ProbandCondition"
+        },
+        "name": "Proband Condition",
+        "description": "Progressive gait ataxia, the condition suffered by the proband.",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -679,6 +735,20 @@
         },
         "name": "Simpson's pedigree",
         "description": "A pedigree of the Simpson's family.",
+        "exampleCanonical": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/Pedigree"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Composition"
+          }
+        ],
+        "reference": {
+          "reference": "Composition/TrioPedigree"
+        },
+        "name": "The trio's pedigree",
+        "description": "A pedigree of the trio.",
         "exampleCanonical": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/Pedigree"
       },
       {

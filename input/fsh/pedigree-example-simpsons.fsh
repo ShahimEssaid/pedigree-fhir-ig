@@ -136,5 +136,4 @@ Description: "A pedigree of the Simpson's family."
 * section[3].entry[2] = Reference(HomerAbeRelationship)
 * section[4].title = "Other"
 * section[4].code = SectionType#other
-* section[4].entry[0] = Reference(BartsCondition)
-* section[4].entry[1] = Reference(DrNick)
+* section[4].entry[0] = Reference(DrNick)

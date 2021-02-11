@@ -121,9 +121,6 @@
       },
       "entry": [
         {
-          "reference": "Condition/BartsCondition"
-        },
-        {
           "reference": "Practitioner/DrNick"
         }
       ]

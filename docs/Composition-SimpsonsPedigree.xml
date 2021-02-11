@@ -95,9 +95,6 @@
       </coding>
     </code>
     <entry>
-      <reference value="Condition/BartsCondition"/>
-    </entry>
-    <entry>
       <reference value="Practitioner/DrNick"/>
     </entry>
   </section>

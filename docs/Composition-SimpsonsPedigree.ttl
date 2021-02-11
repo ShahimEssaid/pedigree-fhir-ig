@@ -132,10 +132,6 @@
      ];
      fhir:Composition.section.entry [
        fhir:index 0;
-       fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/Condition/BartsCondition>;
-       fhir:Reference.reference [ fhir:value "Condition/BartsCondition" ]
-     ], [
-       fhir:index 1;
        fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/Practitioner/DrNick>;
        fhir:Reference.reference [ fhir:value "Practitioner/DrNick" ]
      ]

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a5de592e-0aa4-4f7f-97b8-27b9e8595b84"/>
+  <id value="1aea4902-b986-425b-8b48-12f4644e13bf"/>
   <meta>
-    <lastUpdated value="2021-02-10T16:41:10.670+10:00"/>
+    <lastUpdated value="2021-02-11T16:33:59.012+10:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -67,7 +67,7 @@
         <name value="LifeStatus"/>
         <title value="Life Status"/>
         <status value="active"/>
-        <date value="2021-02-10T16:41:10+10:00"/>
+        <date value="2021-02-11T16:33:59+10:00"/>
         <publisher value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
         <contact>
           <name value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
@@ -79,8 +79,8 @@
         <description value="The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn."/>
         <copyright value="[Global Alliance for Genomics and Health](https://www.ga4gh.org)"/>
         <expansion>
-          <identifier value="urn:uuid:4460f630-31db-4bfc-9c73-bede47381ab5"/>
-          <timestamp value="2021-02-10T16:41:48+10:00"/>
+          <identifier value="urn:uuid:7c498305-9182-4529-af1c-1830dde77af5"/>
+          <timestamp value="2021-02-11T16:34:58+10:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -354,7 +354,7 @@
         <name value="PedigreeRelationshipTypes"/>
         <title value="Pedigree Relationship Types"/>
         <status value="active"/>
-        <date value="2021-02-10T16:41:10+10:00"/>
+        <date value="2021-02-11T16:33:59+10:00"/>
         <publisher value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
         <contact>
           <name value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
@@ -366,8 +366,8 @@
         <description value="The types of relationships between individuals in a pedigree."/>
         <copyright value="[Global Alliance for Genomics and Health](https://www.ga4gh.org)"/>
         <expansion>
-          <identifier value="urn:uuid:5bc36fac-0796-4e71-a0f4-d9d546833fe6"/>
-          <timestamp value="2021-02-10T16:41:48+10:00"/>
+          <identifier value="urn:uuid:e4761f85-6757-4a6e-beaf-543c77ef999b"/>
+          <timestamp value="2021-02-11T16:34:59+10:00"/>
           <total value="26"/>
           <parameter>
             <name value="excludeNested"/>

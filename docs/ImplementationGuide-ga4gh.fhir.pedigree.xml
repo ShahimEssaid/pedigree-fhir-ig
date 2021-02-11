@@ -11,7 +11,7 @@
   <name value="GA4GHPedigreeIG"/>
   <title value="GA4GH Pedigree FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-02-10T16:41:10+10:00"/>
+  <date value="2021-02-11T16:33:59+10:00"/>
   <publisher value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
   <contact>
     <name value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
@@ -389,8 +389,30 @@
         <reference value="Patient/Father"/>
       </reference>
       <name value="Father"/>
-      <description value="The father in a trio."/>
+      <description value="The father in the trio."/>
       <exampleCanonical value="http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/FatherFirstCondition"/>
+      </reference>
+      <name value="Father First Condition"/>
+      <description value="Cardiomegaly, the first condition suffered by the father."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/FatherSecondCondition"/>
+      </reference>
+      <name value="Father Second Condition"/>
+      <description value="Shuffling gait, the second condition suffered by the father."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -438,13 +460,24 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/MelbourneGenomics"/>
+      </reference>
+      <name value="Melbourne Genomics"/>
+      <description value="The Melbourne Genomics organisation."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
         <reference value="Patient/Mother"/>
       </reference>
       <name value="Mother"/>
-      <description value="The mother in a trio."/>
+      <description value="The mother in the trio."/>
       <exampleCanonical value="http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual"/>
     </resource>
     <resource>
@@ -455,8 +488,19 @@
         <reference value="Patient/Proband"/>
       </reference>
       <name value="Proband"/>
-      <description value="The proband in a trio."/>
+      <description value="The proband in the trio."/>
       <exampleCanonical value="http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ProbandCondition"/>
+      </reference>
+      <name value="Proband Condition"/>
+      <description value="Progressive gait ataxia, the condition suffered by the proband."/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -489,6 +533,17 @@
       </reference>
       <name value="Simpson&#39;s pedigree"/>
       <description value="A pedigree of the Simpson&#39;s family."/>
+      <exampleCanonical value="http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/Pedigree"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Composition"/>
+      </extension>
+      <reference>
+        <reference value="Composition/TrioPedigree"/>
+      </reference>
+      <name value="The trio&#39;s pedigree"/>
+      <description value="A pedigree of the trio."/>
       <exampleCanonical value="http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/Pedigree"/>
     </resource>
     <resource>
