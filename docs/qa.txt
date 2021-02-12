@@ -3,7 +3,7 @@
 
 err = 0, warn = 0, info = 3
 IG Publisher Version: 1.1.59
-Generated Fri Feb 12 15:19:38 AEST 2021. FHIR version 4.0.1 for ga4gh.fhir.pedigree#0.1.0 (canonical = http://ga4gh-cp.github.io/pedigree-fhir-ig)
+Generated Fri Feb 12 16:37:19 AEST 2021. FHIR version 4.0.1 for ga4gh.fhir.pedigree#0.1.0 (canonical = http://ga4gh-cp.github.io/pedigree-fhir-ig)
 
  Build Errors : 0 / 0 / 0
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/ImplementationGuide-ga4gh.fhir.pedigree : 0 / 0 / 1

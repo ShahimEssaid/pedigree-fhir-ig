@@ -10,7 +10,7 @@
   "name": "GA4GHPedigreeIG",
   "title": "GA4GH Pedigree FHIR Implementation Guide",
   "status": "draft",
-  "date": "2021-02-12T15:18:42+10:00",
+  "date": "2021-02-12T16:36:12+10:00",
   "publisher": "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream",
   "contact": [
     {
@@ -29,14 +29,6 @@
   "license": "CC0-1.0",
   "fhirVersion": [
     "4.0.1"
-  ],
-  "dependsOn": [
-    {
-      "id": "hl7_fhir_us_core",
-      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
-      "packageId": "hl7.fhir.us.core",
-      "version": "3.1.0"
-    }
   ],
   "definition": {
     "extension": [
