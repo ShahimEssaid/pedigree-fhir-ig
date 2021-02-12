@@ -42,8 +42,8 @@
 
 	  <script src="assets/js/prism.js"></script>
 
-    <style type="text/css">h2{--heading-prefix:"2.15"}
-    h3,h4,h5,h6{--heading-prefix:"2.15"}</style>
+    <style type="text/css">h2{--heading-prefix:"2.13"}
+    h3,h4,h5,h6{--heading-prefix:"2.13"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
@@ -164,19 +164,12 @@
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "extensions",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;lifeStatus&lt;/b&gt;: &lt;span title=\&quot;Codes: {http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus alive}\&quot;&gt;Alive&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p&gt;&lt;b&gt;Generated Narrative&lt;/b&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Unborn&lt;/b&gt;: false&lt;/p&gt;&lt;p&gt;&lt;b&gt;identifier&lt;/b&gt;: id: 1&lt;/p&gt;&lt;p&gt;&lt;b&gt;gender&lt;/b&gt;: female&lt;/p&gt;&lt;p&gt;&lt;b&gt;deceased&lt;/b&gt;: false&lt;/p&gt;&lt;/div&gt;"<a name="end-xhtml"></a>
   },
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.extension">extension</a>" : [
     {
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus",
-      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueCodeableConcept</a>" : {
-        "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
-          {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "alive"
-          }
-        ]
-      }
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn",
+      "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueBoolean</a>" : false
     }
   ],
   "<a href="http://hl7.org/fhir/R4/patient.html#Patient.identifier">identifier</a>" : [
@@ -185,7 +178,8 @@
       "<a href="http://hl7.org/fhir/R4/datatypes.html#Identifier#Identifier.value">value</a>" : "1"
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "female"
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.gender">gender</a>" : "female",
+  "<a href="http://hl7.org/fhir/R4/patient.html#Patient.deceased[x]">deceasedBoolean</a>" : false
 }</code></pre>
 
 
@@ -214,7 +208,7 @@
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/">Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream</a>.  Package ga4gh.fhir.pedigree#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 11, 2021 16:33+1000">2021-02-11</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/">Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream</a>.  Package ga4gh.fhir.pedigree#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 12, 2021 12:27+1000">2021-02-12</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

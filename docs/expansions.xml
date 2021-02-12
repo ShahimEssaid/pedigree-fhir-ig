@@ -1,114 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="1aea4902-b986-425b-8b48-12f4644e13bf"/>
+  <id value="63350a57-94f2-4624-b33f-5503f606c6d5"/>
   <meta>
-    <lastUpdated value="2021-02-11T16:33:59.012+10:00"/>
+    <lastUpdated value="2021-02-12T12:27:10.393+10:00"/>
   </meta>
   <type value="collection"/>
-  <entry>
-    <fullUrl value="http://ga4gh-cp.github.io/pedigree-fhir-ig/ValueSet/LifeStatus"/>
-    <resource>
-      <ValueSet>
-        <id value="LifeStatus"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-LifeStatus.html">Life Status v0.1.0 (CodeSystem)</a>
-            </p>
-            <p>All codes from system 
-              <a href="CodeSystem-LifeStatus.html">
-                <code>http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus</code>
-              </a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Definition</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---ga4gh-cp.github.io-pedigree-fhir-ig-CodeSystem-LifeStatus-alive"> </a>
-                  <a href="CodeSystem-LifeStatus.html#LifeStatus-alive">alive</a>
-                </td>
-                <td>Alive</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---ga4gh-cp.github.io-pedigree-fhir-ig-CodeSystem-LifeStatus-deceased"> </a>
-                  <a href="CodeSystem-LifeStatus.html#LifeStatus-deceased">deceased</a>
-                </td>
-                <td>Deceased</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---ga4gh-cp.github.io-pedigree-fhir-ig-CodeSystem-LifeStatus-unborn"> </a>
-                  <a href="CodeSystem-LifeStatus.html#LifeStatus-unborn">unborn</a>
-                </td>
-                <td>Unborn</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="http://ga4gh-cp.github.io/pedigree-fhir-ig/ValueSet/LifeStatus"/>
-        <version value="0.1.0"/>
-        <name value="LifeStatus"/>
-        <title value="Life Status"/>
-        <status value="active"/>
-        <date value="2021-02-11T16:33:59+10:00"/>
-        <publisher value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
-        <contact>
-          <name value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/"/>
-          </telecom>
-        </contact>
-        <description value="The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn."/>
-        <copyright value="[Global Alliance for Genomics and Health](https://www.ga4gh.org)"/>
-        <expansion>
-          <identifier value="urn:uuid:7c498305-9182-4529-af1c-1830dde77af5"/>
-          <timestamp value="2021-02-11T16:34:58+10:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus"/>
-            <code value="alive"/>
-            <display value="Alive"/>
-          </contains>
-          <contains>
-            <system value="http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus"/>
-            <code value="deceased"/>
-            <display value="Deceased"/>
-          </contains>
-          <contains>
-            <system value="http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus"/>
-            <code value="unborn"/>
-            <display value="Unborn"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
   <entry>
     <fullUrl value="http://ga4gh-cp.github.io/pedigree-fhir-ig/ValueSet/PedigreeRelationshipTypes"/>
     <resource>
@@ -354,7 +251,7 @@
         <name value="PedigreeRelationshipTypes"/>
         <title value="Pedigree Relationship Types"/>
         <status value="active"/>
-        <date value="2021-02-11T16:33:59+10:00"/>
+        <date value="2021-02-12T12:27:10+10:00"/>
         <publisher value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
         <contact>
           <name value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
@@ -366,8 +263,8 @@
         <description value="The types of relationships between individuals in a pedigree."/>
         <copyright value="[Global Alliance for Genomics and Health](https://www.ga4gh.org)"/>
         <expansion>
-          <identifier value="urn:uuid:e4761f85-6757-4a6e-beaf-543c77ef999b"/>
-          <timestamp value="2021-02-11T16:34:59+10:00"/>
+          <identifier value="urn:uuid:01ce61b2-28a3-4442-aff8-81d214733c4c"/>
+          <timestamp value="2021-02-12T12:27:44+10:00"/>
           <total value="26"/>
           <parameter>
             <name value="excludeNested"/>

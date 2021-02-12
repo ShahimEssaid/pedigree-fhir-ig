@@ -8,19 +8,12 @@
   },
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>lifeStatus</b>: <span title=\"Codes: {http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus alive}\">Alive</span></p><p><b>identifier</b>: id: 1</p><p><b>gender</b>: female</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>Unborn</b>: false</p><p><b>identifier</b>: id: 1</p><p><b>gender</b>: female</p><p><b>deceased</b>: false</p></div>"
   },
   "extension": [
     {
-      "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus",
-            "code": "alive"
-          }
-        ]
-      }
+      "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn",
+      "valueBoolean": false
     }
   ],
   "identifier": [
@@ -29,5 +22,6 @@
       "value": "1"
     }
   ],
-  "gender": "female"
+  "gender": "female",
+  "deceasedBoolean": false
 }

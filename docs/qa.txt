@@ -3,11 +3,10 @@
 
 err = 0, warn = 0, info = 3
 IG Publisher Version: 1.1.59
-Generated Thu Feb 11 16:35:29 AEST 2021. FHIR version 4.0.1 for ga4gh.fhir.pedigree#0.1.0 (canonical = http://ga4gh-cp.github.io/pedigree-fhir-ig)
+Generated Fri Feb 12 12:28:06 AEST 2021. FHIR version 4.0.1 for ga4gh.fhir.pedigree#0.1.0 (canonical = http://ga4gh-cp.github.io/pedigree-fhir-ig)
 
  Build Errors : 0 / 0 / 0
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/ImplementationGuide-ga4gh.fhir.pedigree : 0 / 0 / 1
- /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/codesystem-LifeStatus : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/codesystem-SectionType : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/composition-SimpsonsPedigree : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/composition-TrioPedigree : 0 / 0 / 1
@@ -37,16 +36,13 @@ Generated Thu Feb 11 16:35:29 AEST 2021. FHIR version 4.0.1 for ga4gh.fhir.pedig
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/structuredefinition-Pedigree : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/structuredefinition-PedigreeIndividual : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/structuredefinition-PedigreeRelationship : 0 / 0 / 1
- /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/structuredefinition-patient-lifeStatus : 0 / 0 / 1
- /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/valueset-LifeStatus : 0 / 0 / 1
+ /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/structuredefinition-patient-unborn : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/valueset-PedigreeRelationshipTypes : 0 / 0 / 1
  /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/input/vocabulary/codesystem-PedigreeRelationships : 0 / 0 / 1
 </table>
 == n/a ==
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/ImplementationGuide-ga4gh.fhir.pedigree.json ==
 INFORMATION: ImplementationGuide/ga4gh.fhir.pedigree: ImplementationGuide: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ImplementationGuide
-== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/CodeSystem-LifeStatus.json ==
-INFORMATION: CodeSystem/LifeStatus: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/CodeSystem-SectionType.json ==
 INFORMATION: CodeSystem/SectionType: CodeSystem: Validate resource against profile http://hl7.org/fhir/StructureDefinition/CodeSystem
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/Composition-SimpsonsPedigree.json ==
@@ -108,10 +104,8 @@ INFORMATION: StructureDefinition/Pedigree: StructureDefinition: Validate resourc
 INFORMATION: StructureDefinition/PedigreeIndividual: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/StructureDefinition-PedigreeRelationship.json ==
 INFORMATION: StructureDefinition/PedigreeRelationship: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/StructureDefinition-patient-lifeStatus.json ==
-INFORMATION: StructureDefinition/patient-lifeStatus: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
-== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/ValueSet-LifeStatus.json ==
-INFORMATION: ValueSet/LifeStatus: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
+== /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/StructureDefinition-patient-unborn.json ==
+INFORMATION: StructureDefinition/patient-unborn: StructureDefinition: Validate resource against profile http://hl7.org/fhir/StructureDefinition/StructureDefinition
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/fsh-generated/resources/ValueSet-PedigreeRelationshipTypes.json ==
 INFORMATION: ValueSet/PedigreeRelationshipTypes: ValueSet: Validate resource against profile http://hl7.org/fhir/StructureDefinition/ValueSet
 == /Users/met045/CSIRO/workspaces/projects/pedigree-fhir-ig/input/vocabulary/CodeSystem-PedigreeRelationships.json ==

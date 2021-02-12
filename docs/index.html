@@ -119,12 +119,288 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
-</div>
-<h1 id="pedigreeig">PedigreeIG</h1>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#ga4gh-pedigree-fhir-implementation-guide" id="markdown-toc-ga4gh-pedigree-fhir-implementation-guide">GA4GH Pedigree FHIR Implementation Guide</a>    <ul>
+      <li><a href="#scope" id="markdown-toc-scope">Scope</a></li>
+      <li><a href="#understanding-fhir" id="markdown-toc-understanding-fhir">Understanding FHIR</a></li>
+      <li><a href="#mappings" id="markdown-toc-mappings">Mappings</a>        <ul>
+          <li><a href="#individual" id="markdown-toc-individual">Individual</a></li>
+          <li><a href="#relationship" id="markdown-toc-relationship">Relationship</a></li>
+          <li><a href="#pedigree" id="markdown-toc-pedigree">Pedigree</a></li>
+        </ul>
+      </li>
+      <li><a href="#examples" id="markdown-toc-examples">Examples</a>        <ul>
+          <li><a href="#the-simpsons-family" id="markdown-toc-the-simpsons-family">The Simpsons family</a></li>
+          <li><a href="#trio" id="markdown-toc-trio">Trio</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
 
-<p>Feel free to modify this index page with your own awesome content!</p>
+</div>
+<h1 id="ga4gh-pedigree-fhir-implementation-guide">GA4GH Pedigree FHIR Implementation Guide</h1>
+
+<h2 id="scope">Scope</h2>
+<p>Family health history is an important aspect in both genomic research and patient care. The Global Alliance for Genomics and Health is working on a pedigree standard that will allow sharing family history data in a way that is accurate, easy to analyse and transferable between systems. The group has created a <a href="https://github.com/ga4gh-cp/pedigree/blob/2021-01/model.md">conceptual model</a> and a <a href="https://docs.google.com/document/d/1UAtSLBEQ_7ePRLvDPRpoFpiXnl6VQEJXL2eQByEmfGY/">minimal data set document</a> that have been used as the basis for this FHIR implementation guide.</p>
+
+<h2 id="understanding-fhir">Understanding FHIR</h2>
+<p>This implementation guide uses terminology, notations and design principles that are specific to FHIR. Before reading this implementation guide, its important to be familiar with some of the basic principles of FHIR as well as general guidance on how to read FHIR specifications. Readers who are unfamiliar with FHIR are encouraged to read (or at least skim) the following prior to reading the rest of this implementation guide.</p>
+
+<ul>
+  <li><a href="http://hl7.org/fhir/overview.html">FHIR overview</a></li>
+  <li><a href="http://hl7.org/fhir/overview-dev.html">Developer’s Introduction</a></li>
+  <li><a href="http://hl7.org/fhir/overview-clinical.html">Clinical Introduction</a></li>
+  <li><a href="http://hl7.org/fhir/datatypes.html">FHIR data types</a></li>
+  <li><a href="http://hl7.org/fhir/terminologies.html">Using codes</a></li>
+  <li><a href="http://hl7.org/fhir/references.html">References between resources</a></li>
+  <li><a href="http://hl7.org/fhir/formats.html">How to read resource and profile definitions</a></li>
+  <li><a href="http://hl7.org/fhir/resource.html">Base resource</a></li>
+</ul>
+
+<p>This implementation guide builds on FHIR v4.0.1: R4.</p>
+
+<h2 id="mappings">Mappings</h2>
+<p>This section describes how the elements in the conceptual model were mapped to FHIR.</p>
+
+<p>The main classes in the conceptual model are shown in the following diagram:</p>
+
+<p><img src="https://user-images.githubusercontent.com/4251264/105409205-1c53b200-5bfe-11eb-9d77-ed5630138eaf.png" alt="Class model" style="float:none" /></p>
+
+<p>The following sections show how each element was mapped to FHIR.</p>
+
+<h3 id="individual">Individual</h3>
+
+<p>The individual class is mapped to the <a href="https://www.hl7.org/fhir/patient.html">Patient</a> resource through the <a href="StructureDefinition-PedigreeIndividual.html">PedigreeIndividual profile</a>.</p>
+
+<h4 id="properties">properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th>Definition</th>
+      <th>FHIR Mapping</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>ID</td>
+      <td>required</td>
+      <td>logical id</td>
+      <td>id</td>
+      <td>All FHIR resources have a logical identifier.</td>
+    </tr>
+    <tr>
+      <td>name</td>
+      <td>string</td>
+      <td>optional</td>
+      <td>Name of the individual</td>
+      <td>name</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>identifiers</td>
+      <td>list of string</td>
+      <td>optional</td>
+      <td>External identifiers for the individual</td>
+      <td>identifier</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>sex</td>
+      <td>Concept</td>
+      <td>optional</td>
+      <td>Sex for Clinical Use, values: <code class="highlighter-rouge">male</code>, <code class="highlighter-rouge">female</code>, <code class="highlighter-rouge">other</code>, <code class="highlighter-rouge">unknown</code>; See: https://confluence.hl7.org/display/VOC/Gender+Harmony+Context+Definitions and https://www.hl7.org/fhir/valueset-administrative-gender.html</td>
+      <td>gender</td>
+      <td>This is the administrative gender of the patient. Biological sex can be supported using an Observation.</td>
+    </tr>
+    <tr>
+      <td>gender</td>
+      <td>Concept</td>
+      <td>optional</td>
+      <td>Presumed or reported gender identity, values: <code class="highlighter-rouge">male</code>, <code class="highlighter-rouge">female</code>, <code class="highlighter-rouge">non-binary</code>, <code class="highlighter-rouge">non-disclosed</code>, <code class="highlighter-rouge">trans</code>, …; See: https://confluence.hl7.org/display/VOC/Gender+Harmony+Context+Definitions</td>
+      <td>Gender Identity extension</td>
+      <td>This is an official HL7 extension used to record gender identity.</td>
+    </tr>
+    <tr>
+      <td>lifeStatus</td>
+      <td>Concept</td>
+      <td>recommended</td>
+      <td>The presumed/accepted life status of the individual as of the pedigree collection date; one of: <code class="highlighter-rouge">alive</code>, <code class="highlighter-rouge">deceased</code>, <code class="highlighter-rouge">unborn</code></td>
+      <td>Unborn extension (boolean)</td>
+      <td>This is the only extension introduced in the implementation guide. FHIR supports recording if a patient is deceased but not if it is unborn.</td>
+    </tr>
+    <tr>
+      <td>affected</td>
+      <td>boolean</td>
+      <td>not recommended</td>
+      <td>Whether or not the individual is affected by the condition being investigated in this pedigree; included for PED backwards compatibility</td>
+      <td>AffectedStatus profile</td>
+      <td>This is supported through an observation.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="relationship">Relationship</h3>
+
+<p>The relationship class is mapped to the <a href="https://www.hl7.org/fhir/familymemberhistory.html">FamilyMemberHistory</a> resource. This class, along with the official HL7 <a href="https://www.hl7.org/fhir/extension-familymemberhistory-patient-record.html">patient-record</a> extension, can be used as a relationship in a graph model. The main source of confusion when using this class for this purpose is that it includes redundant information about the individuals, which is needed when a proper graph model is not implemented. Therefore, in the <a href="StructureDefinition-PedigreeRelationship.html">PedigreeRelationship profile</a>, the elements that capture redundant information are forbidden, thus making it clear that the intention is for this resource to be used just as a relationship.</p>
+
+<h4 id="properties-1">properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th>Definition</th>
+      <th>FHIR Mapping</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>id</td>
+      <td>ID</td>
+      <td>required</td>
+      <td>Logical id</td>
+      <td>id</td>
+      <td>All FHIR resources have a logical identifier.</td>
+    </tr>
+    <tr>
+      <td>individual</td>
+      <td>ID</td>
+      <td>required</td>
+      <td>Identifier of the subject Individual; equivalent to the FHIR “Scoping Individual” and the Biolink “Object”</td>
+      <td>patient</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>relative</td>
+      <td>ID</td>
+      <td>required</td>
+      <td>Identifier of the relative Individual; equivalent to the FHIR “Player” and the Biolink “Subject”</td>
+      <td>relative extension</td>
+      <td>Uses the official HL7 <a href="https://www.hl7.org/fhir/extension-familymemberhistory-patient-record.html">patient-record</a> extension.</td>
+    </tr>
+    <tr>
+      <td>relation</td>
+      <td>Concept</td>
+      <td>required</td>
+      <td>The relationship between <code class="highlighter-rouge">individual</code> and <code class="highlighter-rouge">relative</code>; if the relationship is directed, it is the relationship that the relative has to the individual (e.g., individual is the child, relative is the mother, then relation is parent); terms should come from the relationship terminology, below</td>
+      <td>relationship</td>
+      <td>A new FHIR code system was created and the binding was set to required.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="relationship-terminology">Relationship Terminology</h4>
+
+<p>The relationship terminology is specified <a href="https://docs.google.com/spreadsheets/d/1V5i-pbOPgg9_F52lYkQpqYbk3u4MIAc9TNw8aglvLL4/edit?usp=sharing">here</a>. A FHIR code system that implements this terminology has been developed as part of the implementation guide and can be browsed <a href="https://ontoserver.csiro.au/shrimp/?system=http%3A%2F%2Fga4gh-cp.github.io%2Fpedigree-fhir-ig%2FCodeSystem%2FPedigreeRelationships&amp;concept=REL%3A001&amp;version=0.1.0&amp;valueset=http%3A%2F%2Fga4gh-cp.github.io%2Fpedigree-fhir-ig%2FCodeSystem%2FPedigreeRelationships%3Fvs">here</a>.</p>
+
+<h3 id="pedigree">Pedigree</h3>
+
+<p>There is no resource in FHIR that represents an entire pedigree. Therefore, this class is mapped to the <a href="https://www.hl7.org/fhir/composition.html">Composition</a> resource, which provides a generic mechanism to package a set of related resources, through the <a href="StructureDefinition-Pedigree.html">Pedigree profile</a>.</p>
+
+<h4 id="properties-2">properties</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>Field</th>
+      <th>Type</th>
+      <th>Status</th>
+      <th>Definition</th>
+      <th>FHIR Mapping</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>proband</td>
+      <td>ID</td>
+      <td>optional</td>
+      <td>Id of Individual that is the index case for the family</td>
+      <td>proband section</td>
+      <td>The composition has a section where a reference to the proband can be established.</td>
+    </tr>
+    <tr>
+      <td>consultand</td>
+      <td>ID</td>
+      <td>optional</td>
+      <td>Id of Individual that is the focus of the current analysis</td>
+      <td>consultand section</td>
+      <td>The composition has a section where a reference to the consultand can be established.</td>
+    </tr>
+    <tr>
+      <td>collectedAt</td>
+      <td>Date</td>
+      <td>optional</td>
+      <td>The date the pedigree was collected, as ISO full or partial date, i.e. YYYY, YYYY-MM, or YYYY-MM-DD</td>
+      <td>date</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>reasonCollected</td>
+      <td>Concept</td>
+      <td>optional</td>
+      <td>The health condition being investigated in the family; if any Individual has the <code class="highlighter-rouge">affected</code> property defined, it refers to this condition</td>
+      <td>reasonCollected section</td>
+      <td>The composition has a section where a reference to the condition that is the reason the pedigree was collected can be established.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="examples">Examples</h2>
+
+<p>Currently, there are two examples in the implementation guide.</p>
+
+<h3 id="the-simpsons-family">The Simpsons family</h3>
+
+<p>This is a simple example that shows how the profiles and other resources can be used to build a simple family history graph. The following figure shows what the model looks like:</p>
+
+<p><img src="simpsons_example.png" alt="Simpsons example" style="float:none" /></p>
+
+<p>The following instances are used to implement this example:</p>
+<ul>
+  <li><a href="Patient-Bart.html">Bart</a></li>
+  <li><a href="Patient-Marge.html">Marge</a></li>
+  <li><a href="Patient-Homer.html">Homer</a></li>
+  <li><a href="Patient-Abe.html">Abe</a></li>
+  <li><a href="FamilyMemberHistory-BartMargeRelationship.html">Bart-Marge Relationship</a></li>
+  <li><a href="FamilyMemberHistory-BartHomerRelationship.html">Bart-Homer Relationship</a></li>
+  <li><a href="FamilyMemberHistory-BartHomerRelationship.html">Marge-Homer Relationship</a></li>
+  <li><a href="FamilyMemberHistory-HomerAbeRelationship.html">Homer-Abe Relationship</a></li>
+  <li><a href="Condition-BartsCondition.html">Bart’s Condition</a></li>
+  <li><a href="Practitioner-DrNick.html">Dr Nick</a></li>
+  <li><a href="Composition-SimpsonsPedigree.html">Simpsons Pedigree</a></li>
+</ul>
+
+<h3 id="trio">Trio</h3>
+
+<p>An example trio from the testing suite of the <a href="https://doi.org/10.1016/j.pathol.2018.12.345">GenoVic system</a>.</p>
+
+<p>The following instances are used to implement this example:</p>
+
+<ul>
+  <li><a href="Patient-Mother.html">Mother</a></li>
+  <li><a href="Observation-AffectedStatusMother.html">Affected Status Mother</a></li>
+  <li><a href="Patient-Father.html">Father</a></li>
+  <li><a href="Observation-AffectedStatusFather.html">Affected Status Father</a></li>
+  <li><a href="Patient-Proband.html">Proband</a></li>
+  <li><a href="Observation-AffectedStatusProband.html">Affected Status Proband</a></li>
+  <li><a href="FamilyMemberHistory-ProbandFatherRelationship.html">Proband-Father Relationship</a></li>
+  <li><a href="FamilyMemberHistory-ProbandMotherRelationship.html">Proband-Mother Relationship</a></li>
+  <li><a href="Organization-MelbourneGenomics.html">Melbourne Genomics</a></li>
+  <li><a href="Composition-TrioPedigree.html">Trio Pedigree</a></li>
+</ul>
+
 
 
 
@@ -148,7 +424,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/">Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream</a>.  Package ga4gh.fhir.pedigree#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 11, 2021 16:33+1000">2021-02-11</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/">Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream</a>.  Package ga4gh.fhir.pedigree#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 12, 2021 12:27+1000">2021-02-12</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |

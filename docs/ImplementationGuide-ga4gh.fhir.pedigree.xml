@@ -11,7 +11,7 @@
   <name value="GA4GHPedigreeIG"/>
   <title value="GA4GH Pedigree FHIR Implementation Guide"/>
   <status value="draft"/>
-  <date value="2021-02-11T16:33:59+10:00"/>
+  <date value="2021-02-12T12:27:10+10:00"/>
   <publisher value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
   <contact>
     <name value="Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"/>
@@ -232,21 +232,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/patient-lifeStatus"/>
+        <reference value="StructureDefinition/patient-unborn"/>
       </reference>
-      <name value="lifeStatus"/>
-      <description value="The life status of an individual as of the pedigree collection date."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/LifeStatus"/>
-      </reference>
-      <name value="Life Status"/>
-      <description value="The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn."/>
+      <name value="Unborn"/>
+      <description value="Indicates if an individual in a pedigree hasn&#39;t been born yet."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -258,17 +247,6 @@
       </reference>
       <name value="Pedigree Relationship Types"/>
       <description value="The types of relationships between individuals in a pedigree."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/LifeStatus"/>
-      </reference>
-      <name value="Life Status"/>
-      <description value="The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

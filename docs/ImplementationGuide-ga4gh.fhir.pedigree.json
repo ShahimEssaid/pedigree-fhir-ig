@@ -10,7 +10,7 @@
   "name": "GA4GHPedigreeIG",
   "title": "GA4GH Pedigree FHIR Implementation Guide",
   "status": "draft",
-  "date": "2021-02-11T16:33:59+10:00",
+  "date": "2021-02-12T12:27:10+10:00",
   "publisher": "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream",
   "contact": [
     {
@@ -353,24 +353,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/patient-lifeStatus"
+          "reference": "StructureDefinition/patient-unborn"
         },
-        "name": "lifeStatus",
-        "description": "The life status of an individual as of the pedigree collection date.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "ValueSet"
-          }
-        ],
-        "reference": {
-          "reference": "ValueSet/LifeStatus"
-        },
-        "name": "Life Status",
-        "description": "The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn.",
+        "name": "Unborn",
+        "description": "Indicates if an individual in a pedigree hasn't been born yet.",
         "exampleBoolean": false
       },
       {
@@ -385,20 +371,6 @@
         },
         "name": "Pedigree Relationship Types",
         "description": "The types of relationships between individuals in a pedigree.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "CodeSystem"
-          }
-        ],
-        "reference": {
-          "reference": "CodeSystem/LifeStatus"
-        },
-        "name": "Life Status",
-        "description": "The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn.",
         "exampleBoolean": false
       },
       {

@@ -28,8 +28,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","The patient's gender identity","The gender the patient identifies with. The Patient's gender identity is used as guidance (e.g. for staff) about how to interact with the patient.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Patient.extension","lifeStatus","","",0,1,"Y","","","Extension {[CanonicalType[http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus]]} {[]}
-","lifeStatus","The life status of an individual as of the pedigree collection date.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
+"Patient.extension","unborn","","",0,1,"Y","","","Extension {[CanonicalType[http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn]]} {[]}
+","Unborn","Indicates if an individual in a pedigree hasn't been born yet.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
 "Patient.modifierExtension","","extensions
@@ -38,7 +38,7 @@ user content","",0,*,"","Y","","Extension {[]} {[]}
 
 Modifier extensions SHALL NOT change the meaning of any elements on Resource or DomainResource (including cannot change the meaning of modifierExtension itself).","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","Modifier extensions allow for extensions that *cannot* be safely ignored to be clearly distinguished from the vast majority of extensions which can be safely ignored.  This promotes interoperability by eliminating the need for implementers to prohibit the presence of extensions. For further information, see the [definition of modifier extensions](http://hl7.org/fhir/R4/extensibility.html#modifierExtension).","","","","","","","",,,,,"",,,,"DomainResource.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
-"Patient.identifier","","","",1,*,"Y","","Y","Identifier {[]} {[]}
+"Patient.identifier","","","",0,*,"Y","","Y","Identifier {[]} {[]}
 ","An identifier for this patient","An identifier for this patient.","","Patients are almost always assigned specific numerical identifiers.","","","","","","","",,,,,"",,,,"Patient.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","id",".id","FiveWs.identifier","PID-3"
 "Patient.active","","","",0,1,"","Y","Y","boolean {[]} {[]}
@@ -61,7 +61,7 @@ Deceased patients may also be marked as inactive for the same reasons, but may b
 "Patient.birthDate","","","",0,1,"","","Y","date {[]} {[]}
 ","The date of birth for the individual","The date of birth for the individual.","At least an estimated year should be provided as a guess if the real DOB is unknown  There is a standard extension ""patient-birthTime"" available that should be used where Time is required (such as in maternity/infant care systems).","Age of the individual drives many clinical processes.","","","","","","","",,,,,"",,,,"Patient.birthDate",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/birthTime",".patient.birthTime","PID-7","21112-8"
-"Patient.deceased[x]","","","",0,0,"","Y","Y","boolean {[]} {[]}
+"Patient.deceased[x]","","","",0,1,"Y","Y","Y","boolean {[]} {[]}
 dateTime {[]} {[]}","Indicates if the individual is deceased or not","Indicates if the individual is deceased or not.","If there's no value in the instance, it means there is no statement on whether or not the individual is deceased. Most systems will interpret the absence of a value as a sign of the person being alive.","The fact that a patient is deceased influences the clinical process. Also, in human communication and relation management it is necessary to know whether the person is alive.","","","","","","","",,,,,"",,,,"Patient.deceased[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedInd, player[classCode=PSN|ANM and determinerCode=INSTANCE]/deceasedTime","n/a","PID-30  (bool) and PID-29 (datetime)"
 "Patient.address","","","",0,*,"","","Y","Address {[]} {[]}

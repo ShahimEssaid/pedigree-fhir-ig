@@ -3,13 +3,6 @@ Alias: GenderIdentityExtension = http://hl7.org/fhir/StructureDefinition/patient
 Alias: SNOMED = http://snomed.info/sct
 Alias: PedigreeRelationshipsCodeSystem = http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/PedigreeRelationships
 
-CodeSystem: LifeStatus
-Title: "Life Status"
-Description: "The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn."
-* #alive "Alive"
-* #deceased "Deceased"
-* #unborn "Unborn"
-
 CodeSystem: SectionType
 Title: "Section Type"
 Description: "Represents the different types of sections in a pedigree."
@@ -19,23 +12,19 @@ Description: "Represents the different types of sections in a pedigree."
 * #relationships "Relationships"
 * #other "Other"
 
-ValueSet: LifeStatus
-Title: "Life Status"
-Description: "The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn."
-* codes from system LifeStatus
-
 ValueSet: PedigreeRelationshipTypes
 Title: "Pedigree Relationship Types"
 Description: "The types of relationships between individuals in a pedigree."
 * codes from system PedigreeRelationshipsCodeSystem
 
-Extension: LifeStatus
-Id: patient-lifeStatus
-Title: "lifeStatus"
-Description: "The life status of an individual as of the pedigree collection date."
+Extension: Unborn
+Id: patient-unborn
+Title: "Unborn"
+Description: "Indicates if an individual in a pedigree hasn't been born yet."
 * ^context.type = #element
 * ^context.expression =  "Patient"
-* valueCodeableConcept from LifeStatus (required)
+* value[x] only boolean
+* extension 0..0
 
 Profile: AffectedStatus
 Parent: Observation
@@ -75,11 +64,11 @@ Title: "Pedigree Individual"
 Description: "Represents and individual in a pedigree."
 * extension contains
   GenderIdentityExtension named genderIdentity 0..1 MS and
-  LifeStatus named lifeStatus 0..1 MS
-* identifier 1..* MS
+  Unborn named unborn 0..1 MS
+* identifier 0..* MS
 * name MS
 * gender MS
-* deceased[x] 0..0 // The other option is to have an 'unborn' boolean extension and use this attribute
+* deceased[x] MS
 
 Profile: Pedigree
 Parent: Composition
@@ -89,6 +78,7 @@ Description: "A Pedigree is collection of selected information about a family, i
 * type.coding.system = SNOMED
 * type.coding.code = #422432008
 * subject MS // This is the consultand
+* date MS
 * title = "Pedigree"
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"

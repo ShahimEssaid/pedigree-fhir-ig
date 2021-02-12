@@ -1,12 +1,5 @@
 [
   {
-    "id": "LifeStatus",
-    "type": "CodeSystem",
-    "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus",
-    "version": "0.1.0",
-    "name": "LifeStatus"
-  },
-  {
     "id": "PedigreeRelationships",
     "type": "CodeSystem",
     "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/PedigreeRelationships",
@@ -56,18 +49,11 @@
     "name": "PedigreeRelationship"
   },
   {
-    "id": "patient-lifeStatus",
+    "id": "patient-unborn",
     "type": "StructureDefinition",
-    "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus",
+    "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn",
     "version": "0.1.0",
-    "name": "LifeStatus"
-  },
-  {
-    "id": "LifeStatus",
-    "type": "ValueSet",
-    "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/ValueSet/LifeStatus",
-    "version": "0.1.0",
-    "name": "LifeStatus"
+    "name": "Unborn"
   },
   {
     "id": "PedigreeRelationshipTypes",

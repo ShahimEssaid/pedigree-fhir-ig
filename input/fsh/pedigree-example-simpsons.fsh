@@ -7,41 +7,45 @@ Instance: Bart
 InstanceOf: PedigreeIndividual
 Title: "Bart"
 Description: "Bart is the proband and consultand."
-* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus"
-* extension[0].valueCodeableConcept = LifeStatus#alive
+* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
+* extension[0].valueBoolean = false
 * gender = #female
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
 * identifier.value = "1"
+* deceasedBoolean = false
 
 Instance: Homer
 InstanceOf: PedigreeIndividual
 Title: "Homer"
 Description: "Homer is Bart's father and Marge's husband."
-* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus"
-* extension[0].valueCodeableConcept = LifeStatus#alive
+* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
+* extension[0].valueBoolean = false
 * gender = #male
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
 * identifier.value = "2"
+* deceasedBoolean = false
 
 Instance: Marge
 InstanceOf: PedigreeIndividual
 Title: "Marge"
 Description: "Marge is Bart's mother and Homer's wife."
-* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus"
-* extension[0].valueCodeableConcept = LifeStatus#alive
+* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
+* extension[0].valueBoolean = false
 * gender = #female
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
 * identifier.value = "3"
+* deceasedBoolean = false
 
 Instance: Abe
 InstanceOf: PedigreeIndividual
 Title: "Abe"
 Description: "Abe is Homer's father."
-* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus"
-* extension[0].valueCodeableConcept = LifeStatus#alive
+* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
+* extension[0].valueBoolean = false
 * gender = #female
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
 * identifier.value = "4"
+* deceasedBoolean = false
 
 Instance: BartMargeRelationship
 InstanceOf: PedigreeRelationship

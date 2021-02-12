@@ -17,7 +17,7 @@
   fhir:ImplementationGuide.name [ fhir:value "GA4GHPedigreeIG"];
   fhir:ImplementationGuide.title [ fhir:value "GA4GH Pedigree FHIR Implementation Guide"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2021-02-11T16:33:59+10:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2021-02-12T12:27:10+10:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -340,28 +340,14 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-lifeStatus" ]
+         fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/patient-unborn" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "lifeStatus" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The life status of an individual as of the pedigree collection date." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Unborn" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Indicates if an individual in a pedigree hasn't been born yet." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "ValueSet" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/ValueSet/LifeStatus>;
-         fhir:Reference.reference [ fhir:value "ValueSet/LifeStatus" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Life Status" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -375,21 +361,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The types of relationships between individuals in a pedigree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "CodeSystem" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus>;
-         fhir:Reference.reference [ fhir:value "CodeSystem/LifeStatus" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Life Status" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The presumed/accepted life status of the individual as of the pedigree collection date; one of: alive, deceased, unborn." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 8;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -403,7 +375,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Represents the different types of sections in a pedigree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -420,7 +392,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual>
        ]
      ], [
-       fhir:index 10;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -437,7 +409,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/AffectedStatus>
        ]
      ], [
-       fhir:index 11;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -454,7 +426,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/AffectedStatus>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -471,7 +443,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/AffectedStatus>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -488,7 +460,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -505,7 +477,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeRelationship>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -522,7 +494,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeRelationship>
        ]
      ], [
-       fhir:index 16;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -536,7 +508,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Attention deficit hyperactivity disorder, the condition that triggered the collection of this pedigree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 17;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -550,7 +522,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dr Nick, author of this pedigree." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 18;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -567,7 +539,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual>
        ]
      ], [
-       fhir:index 19;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -581,7 +553,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Cardiomegaly, the first condition suffered by the father." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 20;
+       fhir:index 18;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -595,7 +567,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Shuffling gait, the second condition suffered by the father." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 21;
+       fhir:index 19;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -612,7 +584,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual>
        ]
      ], [
-       fhir:index 22;
+       fhir:index 20;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -629,7 +601,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeRelationship>
        ]
      ], [
-       fhir:index 23;
+       fhir:index 21;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -646,7 +618,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual>
        ]
      ], [
-       fhir:index 24;
+       fhir:index 22;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -663,7 +635,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeRelationship>
        ]
      ], [
-       fhir:index 25;
+       fhir:index 23;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -677,7 +649,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Melbourne Genomics organisation." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 26;
+       fhir:index 24;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -694,7 +666,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual>
        ]
      ], [
-       fhir:index 27;
+       fhir:index 25;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -711,7 +683,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual>
        ]
      ], [
-       fhir:index 28;
+       fhir:index 26;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -725,7 +697,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Progressive gait ataxia, the condition suffered by the proband." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 29;
+       fhir:index 27;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -742,7 +714,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeRelationship>
        ]
      ], [
-       fhir:index 30;
+       fhir:index 28;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -759,7 +731,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeRelationship>
        ]
      ], [
-       fhir:index 31;
+       fhir:index 29;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -776,7 +748,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/Pedigree>
        ]
      ], [
-       fhir:index 32;
+       fhir:index 30;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -793,7 +765,7 @@
          fhir:link <http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/Pedigree>
        ]
      ], [
-       fhir:index 33;
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

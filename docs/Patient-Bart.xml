@@ -6,19 +6,15 @@
     <profile value="http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/PedigreeIndividual"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>lifeStatus</b>: <span title="Codes: {http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus alive}">Alive</span></p><p><b>identifier</b>: id: 1</p><p><b>gender</b>: female</p></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>Unborn</b>: false</p><p><b>identifier</b>: id: 1</p><p><b>gender</b>: female</p><p><b>deceased</b>: false</p></div>
   </text>
-  <extension url="http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus">
-    <valueCodeableConcept>
-      <coding>
-        <system value="http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/LifeStatus"/>
-        <code value="alive"/>
-      </coding>
-    </valueCodeableConcept>
+  <extension url="http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn">
+    <valueBoolean value="false"/>
   </extension>
   <identifier>
     <system value="urn:fdc:sprinfieldlab.net:2021:id/patient"/>
     <value value="1"/>
   </identifier>
   <gender value="female"/>
+  <deceasedBoolean value="false"/>
 </Patient>

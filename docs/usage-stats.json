@@ -4,11 +4,10 @@
   "fhirVersion": "4.0.1",
   "extensions": [
     {
-      "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus",
-      "title": "lifeStatus",
+      "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn",
+      "title": "Unborn",
       "types": [
-        "CodeableConcept",
-        "CodeableConcept"
+        "boolean"
       ]
     }
   ],
@@ -39,7 +38,7 @@
     ]
   },
   "usage": {
-    "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-lifeStatus": [
+    "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn": [
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
