@@ -3,7 +3,7 @@
   "name": "GA4GHPedigreeIG",
   "package-id": "ga4gh.fhir.pedigree",
   "ig-ver": "0.1.0",
-  "date": "Fri, 12 Feb, 2021 12:27:10 +1000",
+  "date": "Fri, 12 Feb, 2021 15:18:42 +1000",
   "errs": 0,
   "warnings": 0,
   "hints": 3,

@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "63350a57-94f2-4624-b33f-5503f606c6d5",
+  "id" : "5bb1cc10-849e-4353-8bb0-8bc3f60bb7ef",
   "meta" : {
-    "lastUpdated" : "2021-02-12T12:27:10.393+10:00"
+    "lastUpdated" : "2021-02-12T15:18:42.382+10:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "PedigreeRelationshipTypes",
       "title" : "Pedigree Relationship Types",
       "status" : "active",
-      "date" : "2021-02-12T12:27:10+10:00",
+      "date" : "2021-02-12T15:18:42+10:00",
       "publisher" : "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream",
       "contact" : [{
         "name" : "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream",
@@ -31,8 +31,8 @@
       "description" : "The types of relationships between individuals in a pedigree.",
       "copyright" : "[Global Alliance for Genomics and Health](https://www.ga4gh.org)",
       "expansion" : {
-        "identifier" : "urn:uuid:01ce61b2-28a3-4442-aff8-81d214733c4c",
-        "timestamp" : "2021-02-12T12:27:44+10:00",
+        "identifier" : "urn:uuid:658d9de7-5651-4eb7-95b0-f17d9ce37bed",
+        "timestamp" : "2021-02-12T15:19:18+10:00",
         "total" : 26,
         "parameter" : [{
           "name" : "excludeNested",

@@ -24,7 +24,11 @@ The main classes in the conceptual model are shown in the following diagram:
 
 <img src="https://user-images.githubusercontent.com/4251264/105409205-1c53b200-5bfe-11eb-9d77-ed5630138eaf.png" alt="Class model" style="float:none"/>
 
-The following sections show how each element was mapped to FHIR.
+The FHIR resources that were used to implement the conceptual model are shown in the following diagram:
+
+<img src="model.png" alt="FHIR model" style="float:none"/>
+
+The following sections describe how each element was mapped to FHIR.
 
 ### Individual
 
