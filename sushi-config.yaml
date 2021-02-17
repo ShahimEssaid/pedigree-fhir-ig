@@ -6,7 +6,7 @@ id: ga4gh.fhir.pedigree
 canonical: http://ga4gh-cp.github.io/pedigree-fhir-ig
 name: GA4GHPedigreeIG
 title: "GA4GH Pedigree FHIR Implementation Guide"
-description: "FHIR implementation guide of the Global Alliance for Genomics and Health Pedigree standard."
+description: "FHIR implementation guide for the Global Alliance for Genomics and Health Pedigree standard."
 status: draft
 license: CC0-1.0
 version: 0.1.0
