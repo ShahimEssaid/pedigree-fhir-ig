@@ -1,15 +1,10 @@
-Alias: PatientRecordExtension = http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record
-Alias: GenderIdentityExtension = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
-Alias: SNOMED = http://snomed.info/sct
-Alias: PedigreeRelationships = http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/PedigreeRelationships
-
 Instance: Bart
 InstanceOf: PedigreeIndividual
 Title: "Bart"
 Description: "Bart is the proband and consultand."
 * extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
 * extension[0].valueBoolean = false
-* gender = #female
+* gender = #male
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
 * identifier.value = "1"
 * deceasedBoolean = false
@@ -54,9 +49,9 @@ Description: "The relationship between Bart and his mother."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "bart_marge"
-* relationship = PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationships#REL:003
 * patient = Reference(Bart)
-* extension[0].url = PatientRecordExtension
+* extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Marge)
 
 Instance: BartHomerRelationship
@@ -66,9 +61,9 @@ Description: "The relationship between Bart and his father."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "bart_homer"
-* relationship = PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationships#REL:003
 * patient = Reference(Bart)
-* extension[0].url = PatientRecordExtension
+* extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Homer)
 
 Instance: MargeHomerRelationship
@@ -78,9 +73,9 @@ Description: "The relationship between Marge and her husband."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "marge_homer"
-* relationship = PedigreeRelationships#REL:026
+* relationship = $PedigreeRelationships#REL:026
 * patient = Reference(Marge)
-* extension[0].url = PatientRecordExtension
+* extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Homer)
 
 Instance: HomerAbeRelationship
@@ -90,16 +85,16 @@ Description: "The relationship between Homer and his father."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "homer_abe"
-* relationship = PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationships#REL:003
 * patient = Reference(Homer)
-* extension[0].url = PatientRecordExtension
+* extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Abe)
 
 Instance: BartsCondition
 InstanceOf: Condition
 Title: "Bart's condition"
 Description: "Attention deficit hyperactivity disorder, the condition that triggered the collection of this pedigree."
-* code = SNOMED#406506008
+* code = $SNOMED#406506008
 * subject = Reference(Bart)
 
 Instance: DrNick
@@ -115,7 +110,7 @@ InstanceOf: Pedigree
 Title: "Simpson's pedigree"
 Description: "A pedigree of the Simpson's family."
 * status = #final
-* type = SNOMED#422432008
+* type = $SNOMED#422432008
 * date = "2021-02-10"
 * author = Reference(DrNick)
 * title = "Pedigree"
@@ -123,8 +118,8 @@ Description: "A pedigree of the Simpson's family."
 * section[0].title = "Proband"
 * section[0].code = SectionType#proband
 * section[0].entry[0] = Reference(Bart)
-* section[1].title = "Reason collected"
-* section[1].code = SectionType#reasonCollected
+* section[1].title = "Reason"
+* section[1].code = SectionType#reason
 * section[1].entry[0] = Reference(BartsCondition)
 * section[2].title = "Individuals"
 * section[2].code = SectionType#individuals

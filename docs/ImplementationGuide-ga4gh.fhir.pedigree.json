@@ -3,14 +3,14 @@
   "id": "ga4gh.fhir.pedigree",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GA4GHPedigreeIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ga4gh-cp.github.io/pedigree-fhir-ig/ImplementationGuide/ga4gh.fhir.pedigree</pre><div><p>FHIR implementation guide of the Global Alliance for Genomics and Health Pedigree standard.</p>\n</div></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GA4GHPedigreeIG</h2><p>The official URL for this implementation guide is: </p><pre>http://ga4gh-cp.github.io/pedigree-fhir-ig/ImplementationGuide/ga4gh.fhir.pedigree</pre><div><p>FHIR implementation guide for the Global Alliance for Genomics and Health Pedigree standard.</p>\n</div></div>"
   },
   "url": "http://ga4gh-cp.github.io/pedigree-fhir-ig/ImplementationGuide/ga4gh.fhir.pedigree",
   "version": "0.1.0",
   "name": "GA4GHPedigreeIG",
   "title": "GA4GH Pedigree FHIR Implementation Guide",
   "status": "draft",
-  "date": "2021-02-12T16:36:12+10:00",
+  "date": "2021-04-16T14:37:32+10:00",
   "publisher": "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream",
   "contact": [
     {
@@ -23,7 +23,7 @@
       ]
     }
   ],
-  "description": "FHIR implementation guide of the Global Alliance for Genomics and Health Pedigree standard.",
+  "description": "FHIR implementation guide for the Global Alliance for Genomics and Health Pedigree standard.",
   "copyright": "[Global Alliance for Genomics and Health](https://www.ga4gh.org)",
   "packageId": "ga4gh.fhir.pedigree",
   "license": "CC0-1.0",

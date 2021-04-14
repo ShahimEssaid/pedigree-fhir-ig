@@ -220,7 +220,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>sex</td>
       <td>Concept</td>
       <td>optional</td>
-      <td>Sex for Clinical Use, values: <code class="highlighter-rouge">male</code>, <code class="highlighter-rouge">female</code>, <code class="highlighter-rouge">other</code>, <code class="highlighter-rouge">unknown</code>; See: https://confluence.hl7.org/display/VOC/Gender+Harmony+Context+Definitions and https://www.hl7.org/fhir/valueset-administrative-gender.html</td>
+      <td>Sex for Clinical Use, values: <code class="language-plaintext highlighter-rouge">male</code>, <code class="language-plaintext highlighter-rouge">female</code>, <code class="language-plaintext highlighter-rouge">other</code>, <code class="language-plaintext highlighter-rouge">unknown</code>; See: https://confluence.hl7.org/display/VOC/Gender+Harmony+Context+Definitions and https://www.hl7.org/fhir/valueset-administrative-gender.html</td>
       <td>gender</td>
       <td>This is the administrative gender of the patient. Biological sex can be supported using an Observation.</td>
     </tr>
@@ -228,7 +228,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>gender</td>
       <td>Concept</td>
       <td>optional</td>
-      <td>Presumed or reported gender identity, values: <code class="highlighter-rouge">male</code>, <code class="highlighter-rouge">female</code>, <code class="highlighter-rouge">non-binary</code>, <code class="highlighter-rouge">non-disclosed</code>, <code class="highlighter-rouge">trans</code>, …; See: https://confluence.hl7.org/display/VOC/Gender+Harmony+Context+Definitions</td>
+      <td>Presumed or reported gender identity, values: <code class="language-plaintext highlighter-rouge">male</code>, <code class="language-plaintext highlighter-rouge">female</code>, <code class="language-plaintext highlighter-rouge">non-binary</code>, <code class="language-plaintext highlighter-rouge">non-disclosed</code>, <code class="language-plaintext highlighter-rouge">trans</code>, …; See: https://confluence.hl7.org/display/VOC/Gender+Harmony+Context+Definitions</td>
       <td>Gender Identity extension</td>
       <td>This is an official HL7 extension used to record gender identity.</td>
     </tr>
@@ -236,7 +236,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>lifeStatus</td>
       <td>Concept</td>
       <td>recommended</td>
-      <td>The presumed/accepted life status of the individual as of the pedigree collection date; one of: <code class="highlighter-rouge">alive</code>, <code class="highlighter-rouge">deceased</code>, <code class="highlighter-rouge">unborn</code></td>
+      <td>The presumed/accepted life status of the individual as of the pedigree collection date; one of: <code class="language-plaintext highlighter-rouge">alive</code>, <code class="language-plaintext highlighter-rouge">deceased</code>, <code class="language-plaintext highlighter-rouge">unborn</code></td>
       <td>Unborn extension (boolean)</td>
       <td>This is the only extension introduced in the implementation guide. FHIR supports recording if a patient is deceased but not if it is unborn.</td>
     </tr>
@@ -297,7 +297,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>relation</td>
       <td>Concept</td>
       <td>required</td>
-      <td>The relationship between <code class="highlighter-rouge">individual</code> and <code class="highlighter-rouge">relative</code>; if the relationship is directed, it is the relationship that the relative has to the individual (e.g., individual is the child, relative is the mother, then relation is parent); terms should come from the relationship terminology, below</td>
+      <td>The relationship between <code class="language-plaintext highlighter-rouge">individual</code> and <code class="language-plaintext highlighter-rouge">relative</code>; if the relationship is directed, it is the relationship that the relative has to the individual (e.g., individual is the child, relative is the mother, then relation is parent); terms should come from the relationship terminology, below</td>
       <td>relationship</td>
       <td>A new FHIR code system was created and the binding was set to required.</td>
     </tr>
@@ -354,7 +354,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>reasonCollected</td>
       <td>Concept</td>
       <td>optional</td>
-      <td>The health condition being investigated in the family; if any Individual has the <code class="highlighter-rouge">affected</code> property defined, it refers to this condition</td>
+      <td>The health condition being investigated in the family; if any Individual has the <code class="language-plaintext highlighter-rouge">affected</code> property defined, it refers to this condition</td>
       <td>reasonCollected section</td>
       <td>The composition has a section where a reference to the condition that is the reason the pedigree was collected can be established.</td>
     </tr>
@@ -428,11 +428,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <div class="container">  <!-- container -->
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/">Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream</a>.  Package ga4gh.fhir.pedigree#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Feb 12, 2021 16:36+1000">2021-02-12</span>
+          IG &#169; 2021+ <a style="color: #81BEF7" href="https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/">Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream</a>.  Package ga4gh.fhir.pedigree#0.1.0 based on <a style="color: #81BEF7" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Apr 16, 2021 14:37+1000">2021-04-16</span>
           <br/>
           <span style="color: #FFFF77">
                       Links: <a style="color: #81BEF7" href="toc.html">Table of Contents</a> |
                  <a style="color: #81BEF7" href="qa.html">QA Report</a>
+                 
+                
           </span>
         </p>
       </div>  <!-- /inner-wrapper -->
@@ -454,6 +456,13 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <script>anchors.options.visible = 'hover'
 anchors.add()</script>
   
+<!-- feedback form - Google forms -->
+<!-- v0.1, 2021-01-09 -->
+
+
+
+<!-- / feedback form  -->
+
   <!-- Analytics Below
   ================================================== -->
   </body>

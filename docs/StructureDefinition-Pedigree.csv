@@ -276,7 +276,7 @@ If the section has content (instead of sub-sections), the section.code does not 
 "Composition.section.section","","","",0,*,"","","","","Nested Section","A nested sub-section within this section.","Nested sections are primarily used to help human readers navigate to particular portions of the document.","","","","","","","","",,,,,"",,,,"Composition.section.section",0,*,"cmp-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./outboundRelationship[typeCode=""COMP"" and isNormalActRelationship()]/target[moodCode=""EVN"" and classCode=""DOCSECT"" and isNormalAct]",".component.section"
-"Composition.section","reasonCollected","","",1,1,"","","","BackboneElement {[]} {[]}
+"Composition.section","reason","","",1,1,"","","","BackboneElement {[]} {[]}
 ","Composition is broken into sections","The root of the sections that make up the composition.","","","","","","","","","",,,,,"",,,,"Composition.section",0,*,"","cmp-1:A section must contain at least one of text, entries, or sub-sections {text.exists() or entry.exists() or section.exists()}
 cmp-2:A section can only have an emptyReason if it is empty {emptyReason.empty() or entry.empty()}ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}","./outboundRelationship[typeCode=""COMP"" and isNormalActRelationship()]/target[moodCode=""EVN"" and classCode=""DOCSECT"" and isNormalAct]",".component.structuredBody.component.section"
 "Composition.section.id","","","",0,1,"","","","string {[]} {[]}
@@ -293,7 +293,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","N/A"
 "Composition.section.title","","header
 labelcaption","",0,1,"","","","string {[]} {[]}
-","Label for section (e.g. for ToC)","The label for this particular section.  This will be part of the rendered content for the document, and is often used to build a table of contents.","The title identifies the section for a human reader. The title must be consistent with the narrative of the resource that is the target of the section.content reference. Generally, sections SHOULD have titles, but in some documents, it is unnecessary or inappropriate. Typically, this is where a section has subsections that have their own adequately distinguishing title,  or documents that only have a single section. Most Implementation Guides will make section title to be a required element.","Section headings are often standardized for different types of documents.  They give guidance to humans on how the document is organized.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Reason collected""/>","","","",,,,,"",,,,"Composition.section.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Label for section (e.g. for ToC)","The label for this particular section.  This will be part of the rendered content for the document, and is often used to build a table of contents.","The title identifies the section for a human reader. The title must be consistent with the narrative of the resource that is the target of the section.content reference. Generally, sections SHOULD have titles, but in some documents, it is unnecessary or inappropriate. Typically, this is where a section has subsections that have their own adequately distinguishing title,  or documents that only have a single section. Most Implementation Guides will make section title to be a required element.","Section headings are often standardized for different types of documents.  They give guidance to humans on how the document is organized.","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""Reason""/>","","","",,,,,"",,,,"Composition.section.title",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./title",".title"
 "Composition.section.code","","","",1,1,"","","","CodeableConcept {[]} {[]}
 ","Classification of section (recommended)","A code identifying the kind of content contained within the section. This must be consistent with the section title.","The code identifies the section for an automated processor of the document. This is particularly relevant when using profiles to control the structure of the document.   
@@ -301,7 +301,7 @@ labelcaption","",0,1,"","","","string {[]} {[]}
 If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code.","Provides computable standardized labels to topics within the document.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/SectionType""/>
-    <code value=""reasonCollected""/>
+    <code value=""reason""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Classification of a section of a composition/document.","http://hl7.org/fhir/ValueSet/doc-section-codes","",,,,"Composition.section.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code",".code"

@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "SectionType"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/SectionType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">proband<a name=\"SectionType-proband\"> </a></td><td>Proband</td></tr><tr><td style=\"white-space:nowrap\">reasonCollected<a name=\"SectionType-reasonCollected\"> </a></td><td>Reason collected</td></tr><tr><td style=\"white-space:nowrap\">individuals<a name=\"SectionType-individuals\"> </a></td><td>Individuals</td></tr><tr><td style=\"white-space:nowrap\">relationships<a name=\"SectionType-relationships\"> </a></td><td>Relationships</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"SectionType-other\"> </a></td><td>Other</td></tr></table></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/SectionType defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">proband<a name=\"SectionType-proband\"> </a></td><td>Proband</td></tr><tr><td style=\"white-space:nowrap\">reason<a name=\"SectionType-reason\"> </a></td><td>Reason</td></tr><tr><td style=\"white-space:nowrap\">individuals<a name=\"SectionType-individuals\"> </a></td><td>Individuals</td></tr><tr><td style=\"white-space:nowrap\">relationships<a name=\"SectionType-relationships\"> </a></td><td>Relationships</td></tr><tr><td style=\"white-space:nowrap\">other<a name=\"SectionType-other\"> </a></td><td>Other</td></tr></table></div>"
   ];
   fhir:CodeSystem.url [ fhir:value "http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/SectionType"];
   fhir:CodeSystem.version [ fhir:value "0.1.0"];
   fhir:CodeSystem.name [ fhir:value "SectionType"];
   fhir:CodeSystem.title [ fhir:value "Section Type"];
   fhir:CodeSystem.status [ fhir:value "active"];
-  fhir:CodeSystem.date [ fhir:value "2021-02-12T16:36:12+10:00"^^xsd:dateTime];
+  fhir:CodeSystem.date [ fhir:value "2021-04-16T14:37:32+10:00"^^xsd:dateTime];
   fhir:CodeSystem.publisher [ fhir:value "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"];
   fhir:CodeSystem.contact [
      fhir:index 0;
@@ -38,8 +38,8 @@
      fhir:CodeSystem.concept.display [ fhir:value "Proband" ]
   ], [
      fhir:index 1;
-     fhir:CodeSystem.concept.code [ fhir:value "reasonCollected" ];
-     fhir:CodeSystem.concept.display [ fhir:value "Reason collected" ]
+     fhir:CodeSystem.concept.code [ fhir:value "reason" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Reason" ]
   ], [
      fhir:index 2;
      fhir:CodeSystem.concept.code [ fhir:value "individuals" ];

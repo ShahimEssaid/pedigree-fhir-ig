@@ -1,9 +1,3 @@
-Alias: PatientRecordExtension = http://hl7.org/fhir/StructureDefinition/familymemberhistory-patient-record
-Alias: GenderIdentityExtension = http://hl7.org/fhir/StructureDefinition/patient-genderIdentity
-Alias: SNOMED = http://snomed.info/sct
-Alias: PedigreeRelationships = http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/PedigreeRelationships
-Alias: HPO = http://purl.obolibrary.org/obo/hp.owl
-
 Instance: Mother
 InstanceOf: PedigreeIndividual
 Title: "Mother"
@@ -17,7 +11,7 @@ InstanceOf: AffectedStatus
 Title: "Affected Status Mother"
 Description: "The affected status of the mother."
 * status = #final
-* code = SNOMED#103309006
+* code = $SNOMED#103309006
 * valueBoolean = false
 * subject = Reference(Mother)
 
@@ -33,14 +27,14 @@ Instance: FatherFirstCondition
 InstanceOf: Condition
 Title: "Father First Condition"
 Description: "Cardiomegaly, the first condition suffered by the father."
-* code = HPO#HP:0001640
+* code = $HPO#HP:0001640
 * subject = Reference(Father)
 
 Instance: FatherSecondCondition
 InstanceOf: Condition
 Title: "Father Second Condition"
 Description: "Shuffling gait, the second condition suffered by the father."
-* code = HPO#HP:0002362
+* code = $HPO#HP:0002362
 * subject = Reference(Father)
 
 Instance: AffectedStatusFather
@@ -48,7 +42,7 @@ InstanceOf: AffectedStatus
 Title: "Affected Status Father"
 Description: "The affected status of the father."
 * status = #final
-* code = SNOMED#103309006
+* code = $SNOMED#103309006
 * valueBoolean = true
 * subject = Reference(Father)
 
@@ -64,7 +58,7 @@ Instance: ProbandCondition
 InstanceOf: Condition
 Title: "Proband Condition"
 Description: "Progressive gait ataxia, the condition suffered by the proband."
-* code = HPO#HP:0007240
+* code = $HPO#HP:0007240
 * subject = Reference(Proband)
 
 Instance: AffectedStatusProband
@@ -72,7 +66,7 @@ InstanceOf: AffectedStatus
 Title: "Affected Status Proband"
 Description: "The affected status of the proband."
 * status = #final
-* code = SNOMED#103309006
+* code = $SNOMED#103309006
 * valueBoolean = true
 * subject = Reference(Proband)
 
@@ -83,9 +77,9 @@ Description: "The relationship between the proband and her father."
 * status = #completed
 * identifier.system = "urn:fdc:labtec.genovic.org.au:2018:id/relationship"
 * identifier.value = "proband_father"
-* relationship = PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationships#REL:003
 * patient = Reference(Proband)
-* extension[0].url = PatientRecordExtension
+* extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Father)
 
 Instance: ProbandMotherRelationship
@@ -95,9 +89,9 @@ Description: "The relationship between the proband and her mother."
 * status = #completed
 * identifier.system = "urn:fdc:labtec.genovic.org.au:2018:id/relationship"
 * identifier.value = "proband_mother"
-* relationship = PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationships#REL:003
 * patient = Reference(Proband)
-* extension[0].url = PatientRecordExtension
+* extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Mother)
 
 Instance: MelbourneGenomics
@@ -111,7 +105,7 @@ InstanceOf: Pedigree
 Title: "The trio's pedigree"
 Description: "A pedigree of the trio."
 * status = #final
-* type = SNOMED#422432008
+* type = $SNOMED#422432008
 * date = "2021-02-10"
 * author = Reference(MelbourneGenomics)
 * title = "Pedigree"
@@ -119,8 +113,8 @@ Description: "A pedigree of the trio."
 * section[0].title = "Proband"
 * section[0].code = SectionType#proband
 * section[0].entry[0] = Reference(Proband)
-* section[1].title = "Reason collected"
-* section[1].code = SectionType#reasonCollected
+* section[1].title = "Reason"
+* section[1].code = SectionType#reason
 * section[1].entry[0] = Reference(ProbandCondition)
 * section[2].title = "Individuals"
 * section[2].code = SectionType#individuals
