@@ -4,7 +4,6 @@ Id: PedigreeRelationship
 Title: "Pedigree Relationship"
 Description: "Represents a relationship between individuals in a pedigree."
 * extension contains $PatientRecordExtension named relative 1..1 MS
-* identifier 1..* MS
 * relationship MS
 * relationship from PedigreeRelationshipTypes (required)
 * patient MS
