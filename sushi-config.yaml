@@ -23,4 +23,5 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Table of Contents: toc.html
   Artifacts: artifacts.html
