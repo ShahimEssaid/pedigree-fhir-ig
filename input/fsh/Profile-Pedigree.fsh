@@ -32,7 +32,7 @@ Description: "A Pedigree is collection of selected information about a family, i
 * section[relationships].code = SectionType#relationships
 * section[relationships].entry 0..*
 * section[relationships].entry only Reference(PedigreeRelationship)
-* section contains other 1..1
+* section contains other 0..1
 * section[other].title = "Other"
 * section[other].code = SectionType#other
 * section[other].entry 0..*
