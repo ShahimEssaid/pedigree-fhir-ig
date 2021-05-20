@@ -12,7 +12,7 @@ Alias: $PatientRecordExtension = http://hl7.org/fhir/StructureDefinition/familym
 // CodeSystem
 Alias: $ConditionClinicalStatusCodeSystem = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $ConditionVerificationStatusCodeSystem = http://terminology.hl7.org/CodeSystem/condition-ver-status
-Alias: $HPO = http://purl.obolibrary.org/obo/hp.owl
+Alias: $HPO = http://purl.obolibrary.org/obo/hp.fhir
 Alias: $OrganizationTypeCodeSystem = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $SNOMED = http://snomed.info/sct
 Alias: $UBERON = http://purl.obolibrary.org/obo/uberon.owl
