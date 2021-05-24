@@ -1,6 +1,6 @@
 ### Scope
 
-Family health history is an important aspect in both genomic research and patient care. The Global Alliance for Genomics and Health is working on a pedigree standard that will allow sharing family history data in a way that is accurate, easy to analyse and transferable between systems. The group has created a [conceptual model](https://github.com/ga4gh-cp/pedigree/blob/2021-01/model.md) and a [minimal data set document](https://docs.google.com/document/d/1UAtSLBEQ_7ePRLvDPRpoFpiXnl6VQEJXL2eQByEmfGY/) that have been used as the basis for this FHIR implementation guide.
+Family health history is an important aspect in both genomic research and patient care. The Global Alliance for Genomics and Health is working on a pedigree standard that will allow sharing family history data in a way that is accurate, easy to analyse and transferable between systems. The group has created a [conceptual model](https://github.com/GA4GH-Pedigree-Standard/pedigree/blob/master/model.md) and a [minimal data set document](https://docs.google.com/document/d/1UAtSLBEQ_7ePRLvDPRpoFpiXnl6VQEJXL2eQByEmfGY/) that have been used as the basis for this FHIR implementation guide.
 
 ### Understanding FHIR (Prerequisite)
 
