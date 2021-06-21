@@ -77,7 +77,7 @@ Description: "The relationship between the proband and her father."
 * status = #completed
 * identifier.system = "urn:fdc:labtec.genovic.org.au:2018:id/relationship"
 * identifier.value = "proband_father"
-* relationship = $PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationshipsCodeSystem#REL:003
 * patient = Reference(Proband)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Father)
@@ -89,7 +89,7 @@ Description: "The relationship between the proband and her mother."
 * status = #completed
 * identifier.system = "urn:fdc:labtec.genovic.org.au:2018:id/relationship"
 * identifier.value = "proband_mother"
-* relationship = $PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationshipsCodeSystem#REL:003
 * patient = Reference(Proband)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Mother)

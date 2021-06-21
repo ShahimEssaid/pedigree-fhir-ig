@@ -21,5 +21,6 @@ Alias: $UBERON = http://purl.obolibrary.org/obo/uberon.owl
 /**
  Local aliases
  */
-Alias: $PedigreeRelationships = http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/PedigreeRelationships
-Alias: $PedigreeRelationshipsCodeSystem = http://ga4gh-cp.github.io/pedigree-fhir-ig/CodeSystem/PedigreeRelationships
+Alias: $PedigreeRelationshipsCodeSystem = http://purl.org/ga4gh/pedigree-fhir-ig/CodeSystem/PedigreeRelationships
+Alias: $UnbornExtension = http://purl.org/ga4gh/pedigree-fhir-ig/StructureDefinition/patient-unborn
+

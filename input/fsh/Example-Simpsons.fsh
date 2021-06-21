@@ -2,7 +2,7 @@ Instance: Bart
 InstanceOf: PedigreeIndividual
 Title: "Bart"
 Description: "Bart is the proband and consultand."
-* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
+* extension[0].url = $UnbornExtension
 * extension[0].valueBoolean = false
 * gender = #male
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
@@ -13,7 +13,7 @@ Instance: Homer
 InstanceOf: PedigreeIndividual
 Title: "Homer"
 Description: "Homer is Bart's father and Marge's husband."
-* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
+* extension[0].url = $UnbornExtension
 * extension[0].valueBoolean = false
 * gender = #male
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
@@ -24,7 +24,7 @@ Instance: Marge
 InstanceOf: PedigreeIndividual
 Title: "Marge"
 Description: "Marge is Bart's mother and Homer's wife."
-* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
+* extension[0].url = $UnbornExtension
 * extension[0].valueBoolean = false
 * gender = #female
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
@@ -35,7 +35,7 @@ Instance: Abe
 InstanceOf: PedigreeIndividual
 Title: "Abe"
 Description: "Abe is Homer's father."
-* extension[0].url = "http://ga4gh-cp.github.io/pedigree-fhir-ig/StructureDefinition/patient-unborn"
+* extension[0].url = $UnbornExtension
 * extension[0].valueBoolean = false
 * gender = #female
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/patient"
@@ -49,7 +49,7 @@ Description: "The relationship between Bart and his mother."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "bart_marge"
-* relationship = $PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationshipsCodeSystem#REL:003
 * patient = Reference(Bart)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Marge)
@@ -61,7 +61,7 @@ Description: "The relationship between Bart and his father."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "bart_homer"
-* relationship = $PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationshipsCodeSystem#REL:003
 * patient = Reference(Bart)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Homer)
@@ -73,7 +73,7 @@ Description: "The relationship between Marge and her husband."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "marge_homer"
-* relationship = $PedigreeRelationships#REL:026
+* relationship = $PedigreeRelationshipsCodeSystem#REL:026
 * patient = Reference(Marge)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Homer)
@@ -85,7 +85,7 @@ Description: "The relationship between Homer and his father."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "homer_abe"
-* relationship = $PedigreeRelationships#REL:003
+* relationship = $PedigreeRelationshipsCodeSystem#REL:003
 * patient = Reference(Homer)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Abe)

@@ -3,7 +3,7 @@
 # │  supported properties, see: https://fshschool.org/sushi/configuration/                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: ga4gh.fhir.pedigree
-canonical: http://ga4gh-cp.github.io/pedigree-fhir-ig
+canonical: http://purl.org/ga4gh/pedigree-fhir-ig
 name: GA4GHPedigreeIG
 title: "GA4GH Pedigree FHIR Implementation Guide"
 description: "FHIR implementation guide for the Global Alliance for Genomics and Health Pedigree standard."
