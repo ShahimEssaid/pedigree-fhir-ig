@@ -18,6 +18,12 @@ publisher:
   name: "Global Alliance for Genomics and Health - Clinical and Phenotypic Data Capture Work Stream"
   url: https://www.ga4gh.org/work_stream/clinical-phenotypic-data-capture-2/
 
+pages: 
+  index.md:
+    title: Overview
+  downloads.md:
+    title: Downloads
+
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
@@ -25,3 +31,4 @@ menu:
   Home: index.html
   Table of Contents: toc.html
   Artifacts: artifacts.html
+  Download: downloads.html
