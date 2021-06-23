@@ -43,7 +43,7 @@ jobs:
       - name: Validate IG
         run: |
           chmod +x ./_genonce.sh
-          ./_genonce.sh
+          ./_genonce.sh -tx https://r4.ontoserver.csiro.au/fhir
       - name: Publish IG
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
