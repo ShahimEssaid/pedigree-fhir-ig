@@ -16,8 +16,7 @@ Alias: $HPO = http://purl.obolibrary.org/obo/hp.fhir
 Alias: $OrganizationTypeCodeSystem = http://terminology.hl7.org/CodeSystem/organization-type
 Alias: $SNOMED = http://snomed.info/sct
 Alias: $UBERON = http://purl.obolibrary.org/obo/uberon.owl
-Alias: $PedigreeRelationshipsCodeSystem = http://purl.org/ga4gh/rel.fhir
-
+Alias: $PedigreeRelationshipsCodeSystem = http://purl.org/ga4gh/kin.fhir
 
 /**
  Local aliases
