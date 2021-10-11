@@ -49,7 +49,7 @@ Description: "The relationship between Bart and his mother."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "bart_marge"
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003
 * patient = Reference(Bart)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Marge)
@@ -61,7 +61,7 @@ Description: "The relationship between Bart and his father."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "bart_homer"
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003
 * patient = Reference(Bart)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Homer)
@@ -73,7 +73,7 @@ Description: "The relationship between Marge and her husband."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "marge_homer"
-* relationship = $PedigreeRelationshipsCodeSystem#REL:026
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:026
 * patient = Reference(Marge)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Homer)
@@ -85,7 +85,7 @@ Description: "The relationship between Homer and his father."
 * status = #completed
 * identifier.system = "urn:fdc:sprinfieldlab.net:2021:id/relationship"
 * identifier.value = "homer_abe"
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003
 * patient = Reference(Homer)
 * extension[0].url = $PatientRecordExtension
 * extension[0].valueReference = Reference(Abe)

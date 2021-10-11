@@ -133,7 +133,7 @@ Title: "Pedigree 1 Relationship Example 1"
 * identifier.value = "pedigree-1-1"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-11)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-2
 InstanceOf: PedigreeRelationship
@@ -144,7 +144,7 @@ Title: "Pedigree 1 Relationship Example 2"
 * identifier.value = "pedigree-1-2"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-11)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-3
 InstanceOf: PedigreeRelationship
@@ -155,7 +155,7 @@ Title: "Pedigree 1 Relationship Example 3"
 * identifier.value = "pedigree-1-3"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-7)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-4
 InstanceOf: PedigreeRelationship
@@ -166,7 +166,7 @@ Title: "Pedigree 1 Relationship Example 4"
 * identifier.value = "pedigree-1-4"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-7)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-5
 InstanceOf: PedigreeRelationship
@@ -177,7 +177,7 @@ Title: "Pedigree 1 Relationship Example 5"
 * identifier.value = "pedigree-1-5"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-6)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-6
 InstanceOf: PedigreeRelationship
@@ -188,7 +188,7 @@ Title: "Pedigree 1 Relationship Example 6"
 * identifier.value = "pedigree-1-6"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-6)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-7
 InstanceOf: PedigreeRelationship
@@ -199,7 +199,7 @@ Title: "Pedigree 1 Relationship Example 7"
 * identifier.value = "pedigree-1-7"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-5)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-8
 InstanceOf: PedigreeRelationship
@@ -210,7 +210,7 @@ Title: "Pedigree 1 Relationship Example 8"
 * identifier.value = "pedigree-1-8"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-5)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-9
 InstanceOf: PedigreeRelationship
@@ -221,7 +221,7 @@ Title: "Pedigree 1 Relationship Example 9"
 * identifier.value = "pedigree-1-9"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-4)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-10
 InstanceOf: PedigreeRelationship
@@ -232,7 +232,7 @@ Title: "Pedigree 1 Relationship Example 10"
 * identifier.value = "pedigree-1-10"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-4)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-11
 InstanceOf: PedigreeRelationship
@@ -243,7 +243,7 @@ Title: "Pedigree 1 Relationship Example 11"
 * identifier.value = "pedigree-1-11"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-3)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-12
 InstanceOf: PedigreeRelationship
@@ -254,7 +254,7 @@ Title: "Pedigree 1 Relationship Example 12"
 * identifier.value = "pedigree-1-12"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-3)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-13
 InstanceOf: PedigreeRelationship
@@ -265,7 +265,7 @@ Title: "Pedigree 1 Relationship Example 13"
 * identifier.value = "pedigree-1-13"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-2)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-14
 InstanceOf: PedigreeRelationship
@@ -276,7 +276,7 @@ Title: "Pedigree 1 Relationship Example 14"
 * identifier.value = "pedigree-1-14"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-2)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-15
 InstanceOf: PedigreeRelationship
@@ -287,7 +287,7 @@ Title: "Pedigree 1 Relationship Example 15"
 * identifier.value = "pedigree-1-15"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-1)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 Instance: pedigree-1-relationship-example-16
 InstanceOf: PedigreeRelationship
@@ -298,7 +298,7 @@ Title: "Pedigree 1 Relationship Example 16"
 * identifier.value = "pedigree-1-16"
 * status = #completed
 * patient = Reference(pedigree-1-individual-example-1)
-* relationship = $PedigreeRelationshipsCodeSystem#REL:003 "Biological parent"
+* relationship = $PedigreeRelationshipsCodeSystem#KIN:003 "isBiologicalParent"
 
 
 /**
