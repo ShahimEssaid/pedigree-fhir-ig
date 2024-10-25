@@ -7,7 +7,7 @@ Description: "Represents an individual in a pedigree."
   $GenderIdentityExtension named genderIdentity 0..1 MS and
   Unborn named unborn 0..1 MS and
   PopulationDescriptors named populationDescriptors 0..* MS and
-  https://github.com/phenopackets/core-ig/StructureDefinition/KaryotypicSex named karyotypicSex 0..1 MS
+  http://hl7.org/fhir/uv/phenomics-exchange/StructureDefinition/KaryotypicSex named karyotypicSex 0..1 MS
 
 * identifier 0..* MS
 * name MS
